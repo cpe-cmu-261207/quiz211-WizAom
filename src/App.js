@@ -1,16 +1,13 @@
 function App() {
-  const persons = [
-    {
-      name: "Bob",
-      gender: "male",
-      age: "50"
-    },
-    {
-      name: "Alice",
-      gender: "male",
-      age: "20"
-    }
-  ];
+  const persons = (props) => {
+    return (
+      <label for = "name"> 
+        {props.name}: 
+      </label>
+      //<label for = "gender"> {props.gender}: </label>
+      //<input type= "text" name={props.name} />
+    )
+  }
   return (
     <div class="ml-2">
       <h3 class="title is-3">Person List</h3>
@@ -24,6 +21,7 @@ function App() {
             <th>Age</th>
           </tr>
           <tr>
+            <person label ="name" name="Bob"> 
             <td>Bob</td>
             <td>male</td>
             <td>50</td>

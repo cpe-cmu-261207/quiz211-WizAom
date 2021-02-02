@@ -26,6 +26,17 @@ function App() {
             <td>male</td>
             <td>50</td>
           </tr>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <person label ="name" name="Bob"> 
+            <td>Alice</td>
+            <td>male</td>
+            <td>20</td>
+          </tr>
         </tbody>
       </table>
 
